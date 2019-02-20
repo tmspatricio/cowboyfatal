@@ -1,4 +1,5 @@
 package org.academiadecodigo.bootcamp.cowboyfatal;
 
-public class Bullet {
-}
+
+
+public class Bullet {}
