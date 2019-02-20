@@ -20,7 +20,7 @@ public class Field {
         player = new Player();
     }
 
-    public void sandbox() throws InterruptedException {
+    public void sandbox() {
 
         /**
          * x horizontal

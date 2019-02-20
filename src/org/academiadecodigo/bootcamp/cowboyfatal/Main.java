@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Field field = new Field();
+        Menu menu = new Menu();
 
-        field.sandbox();
+
     }
 }
