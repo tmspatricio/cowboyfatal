@@ -19,13 +19,18 @@ public class Menu implements KeyboardHandler {
         rectangle.setColor(Color.BLACK);
         rectangle.draw();
 
-        Picture picture = new Picture(10, 10, "wild-west.jpg");
+        Picture picture = new Picture(10, 10, "firstmenu.png");
         picture.draw();
 
-        Text text = new Text(250, 100, "PRESS SPACE TO START");
+        Text text = new Text(250, 450, "PRESS SPACE TO START");
         text.draw();
         text.grow(80, 40);
-        text.setColor(Color.RED);
+        text.setColor(Color.BLACK);
+
+        Text quit = new Text(300, 550, "PRESS Q TO QUIT");
+        quit.draw();
+        quit.grow(80, 40);
+        quit.setColor(Color.BLACK);
 
 
         kb = new Keyboard(this);
@@ -36,13 +41,25 @@ public class Menu implements KeyboardHandler {
         kb.addEventListener(dPressed);
 
 
+        KeyboardEvent qPressed = new KeyboardEvent();
+        qPressed.setKey(KeyboardEvent.KEY_Q);
+        qPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
+        kb.addEventListener(qPressed);
+
+
+
     }
 
 
     public void keyPressed(KeyboardEvent e) {
+
         if (e.getKey() == KeyboardEvent.KEY_SPACE) {
             goGame();
             System.out.println("GoGame");
+        } else if (e.getKey() == KeyboardEvent.KEY_Q) {
+
+            System.out.println("Quit");
+            System.exit(1);
         }
 
     }
