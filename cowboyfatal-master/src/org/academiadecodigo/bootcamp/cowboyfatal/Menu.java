@@ -22,8 +22,6 @@ public class Menu implements KeyboardHandler {
         Picture picture = new Picture(10, 10, "xxx.jpg");
         picture.draw();
 
-
-
         Text text1 = new Text(575, 456, "PRESS SPACE TO START");
         text1.draw();
         text1.grow(160, 80);
@@ -57,7 +55,6 @@ public class Menu implements KeyboardHandler {
         qPressed.setKey(KeyboardEvent.KEY_Q);
         qPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         kb.addEventListener(qPressed);
-
 
 
     }
