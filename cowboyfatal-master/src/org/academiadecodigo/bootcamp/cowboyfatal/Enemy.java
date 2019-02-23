@@ -15,7 +15,7 @@ public class Enemy implements KeyboardHandler{
     private Keyboard kb;
 
     public void createEnemy() {
-        picture = new Picture(10, 10, "enemy.png");
+        picture = new Picture(100, 610, "Human_180.png");
         picture.draw();
     }
 

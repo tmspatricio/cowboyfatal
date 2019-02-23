@@ -17,8 +17,9 @@ public class Player implements KeyboardHandler {
     private Enemy enemy;
 
     public void createPlayer() {
-        picture = new Picture(-10, 400, "player.png");
+        picture = new Picture(1000, 610, "cowboy-115.png");
         picture.draw();
+
     }
 
     public void movePlayer() {

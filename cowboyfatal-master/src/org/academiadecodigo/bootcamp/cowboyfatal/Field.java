@@ -28,11 +28,11 @@ public class Field {
          */
 
         //canvas
-        Rectangle rectangle = new Rectangle(10, 10, 1200, 60);
+        Rectangle rectangle = new Rectangle(10, 10, 1200, 600);
         rectangle.setColor(Color.BLACK);
         rectangle.draw();
 
-        Picture picture = new Picture(10, 10, "bgGame.jpg");
+        Picture picture = new Picture(10, 10, "Fundo1300.jpg");
         picture.draw();
 
 

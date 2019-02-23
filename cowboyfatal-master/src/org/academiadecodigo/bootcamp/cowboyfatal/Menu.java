@@ -19,9 +19,8 @@ public class Menu implements KeyboardHandler {
         rectangle.setColor(Color.BLACK);
         rectangle.draw();
 
-        Picture picture = new Picture(10, 10, "xxx.jpg");
+        Picture picture = new Picture(10, 10, "BackgroudMenu.jpg");
         picture.draw();
-
 
 
         Text text1 = new Text(575, 456, "PRESS SPACE TO START");
@@ -57,7 +56,6 @@ public class Menu implements KeyboardHandler {
         qPressed.setKey(KeyboardEvent.KEY_Q);
         qPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         kb.addEventListener(qPressed);
-
 
 
     }
